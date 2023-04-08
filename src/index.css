@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #2e2b2b;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.form {
+  background-color: #323232;
+  color: #ffffff;
+  width: 500px;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  box-shadow: 0.25rem 1.15rem 1.8rem 1.5rem  #4d4949;
+}
+
+.input {
+  padding: 0.8rem 1rem;
+  display: inline-block;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: #464545;
+  color: #fbf8f8;
+  font-size: 1.2rem;
+  border-radius: .8rem;
+}
+
+input::placeholder {
+  color: #777777
+}
+
+
+img {
+  width: 350px;
+  min-height: max-content;
+}
+
+.submit {
+  background-color: #3e3d3d;
+  padding: 1rem;
+  border-radius: .5rem;
+  color: #faf8f8;
+  width: 100%;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submit:hover {
+  background-color: #4d4949;
+  animation: ease 0.5s linear infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.loading {
+  width: 80%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.loading span {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  animation: _loading 1s linear infinite;
+  -webkit-animation: _loading 1s linear infinite;
+}
+
+.loading p {
+  font-size: 1rem;
+  color: #bdbdbd;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@keyframes _loading {
+  0% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+
+}
